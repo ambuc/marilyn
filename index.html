@@ -68,11 +68,16 @@
     </div>
 
     <script type='text/template' id='nav-template'>
-      <%for(var i = 0; i < nav.length; i++){%>
-        <li> <a href='directory.html?c=<%=nav[i].link%>'>
-          <%=nav[i].name%>
+      <!-- ORD categories -->
+      <%for(var i = 0; i < ord.length; i++){%>
+        <li> <a href='directory.html?c=<%=ord[i]%>'>
+          <%=dir[ord[i]].name%>
         </a> </li>
       <%}%>
+      <!-- SPECIAL -->
+      <li> <a href='events.html'>Events</a></li>
+      <li> <a href='resume.pdf'>Resume</a></li>
+      <li> <a href='mailto:marilynjfriedman@gmail.com'>Contact</a></li>
     </script>
 
   </body>

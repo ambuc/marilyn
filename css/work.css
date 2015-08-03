@@ -77,7 +77,7 @@ div.small-nav-row{ margin-top:20px; margin-bottom:20px; }
 
 .big-view .detail-rec .material-placeholder{
 	display: inline-block;
-	padding-right:10px;
+	/*padding-right:10px;*/
 }
 
 .big-view .detail-rec img{
@@ -91,7 +91,7 @@ div.small-nav-row{ margin-top:20px; margin-bottom:20px; }
 }
 .small-view .detail-rec .material-placeholder{
 	display: inline-block;
-	padding:10px;
+	/*padding:10px;*/
 }
 
 .small-view .detail-rec img{

@@ -1,6 +1,7 @@
 body{ color: #ddd; }
 
 h1{ 
+	color: #ccc;
 	font-family: 	'Belleza', sans-serif; 
 	font-size: 		3em; 
 	display: 		inline-block; 
@@ -24,6 +25,12 @@ p#bio br {
 
 .row{ 
 	margin-bottom:	0px; 
+}
+
+hr{
+	border-color: #999;
+	background:none;
+	color:none;
 }
 
 

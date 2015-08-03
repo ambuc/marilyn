@@ -10,6 +10,8 @@ $(document).ready(function(){
 		case "work":
 			drawWork();
 			break;
+		case "event":
+			break;
 		default:
 			console.log('Nothing drawn.');
 			break;
@@ -20,7 +22,7 @@ $(document).ready(function(){
 
 function drawHomepage(){	
 	var template = _.template( $('#nav-template').html() );
-	var data = { 'nav' : nav };
+	var data = { 'ord' : ord, 'dir' : dir };
 	$('ul.nav').html( template(data) );
 	$('ul#topnav').html( template(data) );
 	$('p#bio').html(bio);
@@ -61,7 +63,8 @@ function drawWork(){
 		$('.image-rec').remove();
 
 		$('.two-image-rec').addClass('left-right');
-		$('.two-image-rec').attr('colspan', '3');
+		$(' .left-rec').attr('colspan', '4');
+		$('.right-rec').attr('colspan', '4');
 
 		$(' .left-rec').append( _.template( $( ' #left-image-template'  ).html( ) ) ( work ) );
 		$('.right-rec').append( _.template( $( '#right-image-template'  ).html( ) ) ( work ) );
@@ -70,7 +73,7 @@ function drawWork(){
 		$('.right-rec').remove();
 
 		$('.image-rec').addClass('top-bottom');
-		$('.image-rec').attr('colspan', '3');
+		$('.image-rec').attr('colspan', '7');
 
 		$('.image-rec').append( _.template( $( '#top-image-template'    ).html( ) ) ( work ) );
 		$('.image-rec').append( _.template( $( '#bottom-image-template' ).html( ) ) ( work ) );

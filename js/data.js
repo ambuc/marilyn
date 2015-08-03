@@ -1,66 +1,5 @@
 // contains four data arrays, which constitute the entirety of the data in the program.
 
-//nav -- objects for each item in the navigation bar
-var nav = [
-      {
-          "name" : "Portraits",
-          "link" : "portraits",
-          "type" : "category"
-      },
-      {
-          "name" : "Early Work",
-          "link" : "early-work",
-          "type" : "category"
-      },
-      {
-          "name" : "Cast Figures",
-          "link" : "cast-figures",
-          "type" : "category"
-      },
-      {
-          "name" : "Figure Sketches",
-          "link" : "figure-sketches",
-          "type" : "category"
-      },
-      {
-          "name" : "Totems",
-          "link" : "totems",
-          "type" : "category"
-      },
-      {
-          "name" : "Clay Figures",
-          "link" : "clay-figures",
-          "type" : "category"
-      },
-      {
-          "name" : "Clay Heads",
-          "link" : "clay-heads",
-          "type" : "category"
-      },
-      {
-          "name" : "Recent Work",
-          "link" : "recent-work",
-          "type" : "category"
-      },
-      {
-          "name" : "Events",
-          "link" : "events",
-          "type" : "category"
-      },
-      {
-          "name" : "Contact",
-          "link" : "contact",
-          "type" : "link",
-          "href" : "mailto:marilynjfriedman@gmail.com"
-      },
-      {
-          "name" : "Resumé",
-          "link" : "resume",
-          "type" : "link",
-          "href" : "/resume.pdf"
-      }
-];
-
 //lib -- unordered list of works, objects with keywords
 var lib = {
 	"rene" : {
@@ -135,8 +74,8 @@ var lib = {
 		"images": 1,
 		"details": 0
 	},
-	"girl-with-towel" : {
-		"name": "Girl w/ Towel",
+	"reclining-figure" : {
+		"name": "Reclining Figure",
 		"materials": "Fired Clay",
 		"x": "8",
 		"y": "8",
@@ -615,7 +554,7 @@ var lib = {
 	},
 	"painted-head" : {
 		"name": "Painted Head",
-		"materials": "Fired Clay w/ Bisque Stain Wash",
+		"materials": "Fired Clay w/ Bisque Stain",
 		"x": "7.5",
 		"y": "8.5",
 		"z": "16.5",
@@ -716,9 +655,9 @@ var lib = {
 	"artists-mother" : {
 		"name": "Artist's Mother",
 		"materials": "6ft Fired Clay",
-		"x": "-",
-		"y": "-",
-		"z": "6",
+		"x": "20",
+		"y": "24",
+		"z": "72",
 		"images": 2,
 		"layout": "left-right",
 		"details": 1
@@ -745,7 +684,7 @@ var dir = {
 	"early-figurative" : {
 		"name" : "Early Figurative",
 		"link" : "early-figurative",
-		"works" : ["girl-with-towel", "reclining-male", "seated-girl", "grey-girl", "painted-figure", "barn-figure", "green-man", "girl-standing", "walking-man", "leaning-woman", "torso"]
+		"works" : ["reclining-figure", "reclining-male", "seated-girl", "grey-girl", "painted-figure", "barn-figure", "green-man", "girl-standing", "walking-man", "leaning-woman", "torso"]
 	},
 	"figure-sketches" : {
 		"name" : "Figure Sketches",
@@ -770,15 +709,13 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["time-forms-2", "time-forms-1", "running-figure-2", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
+		"works" : ["time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
 	}
 };
 
 //ord -- ordered list of categories
 var ord = [
-	"recent-work", "portraits", "early-figurative", "figure-sketches", 
-	"totems", 
-	"clay-figures", "clay-heads"
+	"recent-work", "clay-figures", "clay-heads", "totems", "early-figurative", "figure-sketches", "portraits"
 ];
 
 var bio = "MARILYN J FRIEDMAN began as a figurative sculptor, developing the rhythms, dynamics, and motifs of the human form - creating a vocabulary in clay which evolved into a language of personal imagery and content. <br/> She studied sculpture at The Art Students League of New York, Skowhegan School of Painting and Sculpture, The University of Siena, Italy, and received a BA in Art History and Sculpture from Stony Brook University. <br/> She has received numerous grants and awards for her portrait, figurative, and abstract works from organizations such as The National Academy of Design, The National Sculpture Society, and The National Arts Club. She has created commissioned sculpture for Kohler, Lufthansa, and Absolut, and her work is in many private collections. <br/> Ms. Friedman has taught sculpture at Parsons School of Design, and has been on the sculpture faculty of the National Academy School. She is currently an Instructor at The Art Students League of New York. <br/> Marilyn J Friedman is a recipient of the 2014 Adolph &amp; Esther Gottlieb Foundation Grant in recognition of her work as a sculptor.";
