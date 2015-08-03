@@ -742,30 +742,20 @@ var dir = {
 		"link" : "portraits",
 		"works" : ["rene", "jabbo", "manuel", "sue", "james", "sid", "jennifer", "brian"]
 	},
-	"early-work" : {
-		"name" : "Early Work",
-		"link" : "early-work",
-		"works" : ["girl-with-towel", "reclining-male", "seated-girl", "grey-girl"]
-	},
-	"cast-figures" : {
-		"name" : "Cast Figures",
-		"link" : "cast-figures",
-		"works" : ["painted-figure", "barn-figure", "green-man", "girl-standing", "walking-man", "leaning-woman", "torso"]
+	"early-figurative" : {
+		"name" : "Early Figurative",
+		"link" : "early-figurative",
+		"works" : ["girl-with-towel", "reclining-male", "seated-girl", "grey-girl", "painted-figure", "barn-figure", "green-man", "girl-standing", "walking-man", "leaning-woman", "torso"]
 	},
 	"figure-sketches" : {
 		"name" : "Figure Sketches",
 		"link" : "figure-sketches",
 		"works" : ["sitting-figure-1", "kneeling-figure-1", "seated-figure-3", "seated-figure-2", "kneeling-figure-2", "seated-figure", "reclining-figure-1", "reclining-figure-2", "figure-relief", "reclining-totem", "seated-figure-4", "leaning-figure"]
 	},
-	"clay-sketches" : {
-		"name" : "Clay Sketches",
-		"link" : "clay-sketches",
-		"works" : ["totem-sketch", "sketch-1", "sketch-2", "sketch-with-hat"]
-	},
 	"totems" : {
 		"name" : "Totems",
 		"link" : "totems",
-		"works" : ["apt-totem", "totem", "man-with-hat-1", "dark-totem", "painted-totem", "aluminum-figure"]
+		"works" : ["totem-sketch", "sketch-1", "sketch-2", "sketch-with-hat", "apt-totem", "totem", "man-with-hat-1", "dark-totem", "painted-totem", "aluminum-figure"]
 	},
 	"clay-figures" : {
 		"name" : "Clay Figures",
@@ -786,17 +776,9 @@ var dir = {
 
 //ord -- ordered list of categories
 var ord = [
-	"recent-work", "portraits", "early-work", 
-	"cast-figures", "figure-sketches", 
-	"clay-sketches", "totems", 
+	"recent-work", "portraits", "early-figurative", "figure-sketches", 
+	"totems", 
 	"clay-figures", "clay-heads"
 ];
 
 var bio = "MARILYN J FRIEDMAN began as a figurative sculptor, developing the rhythms, dynamics, and motifs of the human form - creating a vocabulary in clay which evolved into a language of personal imagery and content. <br/> She studied sculpture at The Art Students League of New York, Skowhegan School of Painting and Sculpture, The University of Siena, Italy, and received a BA in Art History and Sculpture from Stony Brook University. <br/> She has received numerous grants and awards for her portrait, figurative, and abstract works from organizations such as The National Academy of Design, The National Sculpture Society, and The National Arts Club. She has created commissioned sculpture for Kohler, Lufthansa, and Absolut, and her work is in many private collections. <br/> Ms. Friedman has taught sculpture at Parsons School of Design, and has been on the sculpture faculty of the National Academy School. She is currently an Instructor at The Art Students League of New York. <br/> Marilyn J Friedman is a recipient of the 2014 Adolph &amp; Esther Gottlieb Foundation Grant in recognition of her work as a sculptor.";
-
-
-
-
-
-
-
