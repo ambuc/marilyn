@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Marilyn J. Friedman • Sculptor</title>
+    <title>Marilyn J Friedman • Sculptor</title>
 
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -12,50 +12,75 @@
 <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
 
   </head>
 
   <body id='homepage'>
     <div class='container'>
-      <div class='row'>
-        <div class='col s7' id='headerrow'>
-          <div id='port'>
+      <!-- small-view -->
+      <span class='small-view'>
+        <div class='row hide-on-med-and-up'>
+          <div class='col s12'>
+            <h1 id='name'>
+              Marilyn J Friedman<br/> <small>Sculptor</small>
+            </h1>
+            <ul class='nav top-nav'> 
+              <!-- top-nav gets appended here  -->
+            </ul>
+            <p id='bio'> 
+              <!-- bio gets appended here -->
+            </p>
+          </div>
+        </div>
+      </span>
+
+      <!-- big-view -->
+      <span class='big-view'>
+        <div class='row hide-on-small-only'>
+          <div class='col s7' id='image-bg'>
+            <div id='image-shading'>
+              <div class='row'>
+                <h1 class='right' id='name'> 
+                  Marilyn J Friedman 
+                </h1>
+              </div>
+              <div class='row'>
+                <ul class='right nav home-nav' id=''>
+                  <!-- home-nav gets appended here -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='col s5'>
             <div class='row'>
-              <h1 class='right' id='name'>Marilyn Friedman</h1>
+              <h1><small>Sculptor</small></h1>
             </div>
             <div class='row'>
-              <ul class='right' id='nav'>
-              </ul>
+              <p id='bio'> 
+                <!-- bio gets appended here --> 
+              </p>
             </div>
           </div>
         </div>
-        <div class='col s5'>
-          <div class='row'>
-            <h1 id='prof'><small>Sculptor</small></h1>
-          </div>
-          <div class='row'>
-            <p id='bio'> MARILYN J FRIEDMAN began as a figurative sculptor, developing the rhythms, dynamics, and motifs of the human form - creating a vocabulary in clay which evolved into a language of personal imagery and content. <br/> She studied sculpture at The Art Students League of New York, Skowhegan School of Painting and Sculpture, The University of Siena, Italy, and received a BA in Art History and Sculpture from Stony Brook University. <br/> She has received numerous grants and awards for her portrait, figurative, and abstract works from organizations such as The National Academy of Design, The National Sculpture Society, and The National Arts Club. She has created commissioned sculpture for Kohler, Lufthansa, and Absolut, and her work is in many private collections. <br/> Ms. Friedman has taught sculpture at Parsons School of Design, and has been on the sculpture faculty of the National Academy School. She is currently an Instructor at The Art Students League of New York. <br/> Marilyn J Friedman is a recipient of the 2014 Adolph &amp; Esther Gottlieb Foundation Grant in recognition of her work as a sculptor. </p>
-          </div>
-        </div>
-      </div>
+      </span>
     </div>
 
     <script type='text/template' id='nav-template'>
       <%for(var i = 0; i < nav.length; i++){%>
-        <li> <a href='directory.html?category=<%=nav[i].link%>'>
+        <li> <a href='directory.html?c=<%=nav[i].link%>'>
           <%=nav[i].name%>
         </a> </li>
       <%}%>
     </script>
-
 
   </body>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-  <script src="data.js"></script>
-  <script src="home.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
 
 </html>

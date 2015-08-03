@@ -1,3 +1,5 @@
+// contains four data arrays, which constitute the entirety of the data in the program.
+
 //nav -- objects for each item in the navigation bar
 var nav = [
       {
@@ -642,7 +644,7 @@ var lib = {
 		"details": 1
 	},
 	"time-forms-1" : {
-		"name": "Time/Forms 1",
+		"name": "Time/Forms I",
 		"materials": "Fired Clay",
 		"x": "16",
 		"y": "37",
@@ -784,15 +786,13 @@ var dir = {
 
 //ord -- ordered list of categories
 var ord = [
-	"portraits", "early-work", 
+	"recent-work", "portraits", "early-work", 
 	"cast-figures", "figure-sketches", 
 	"clay-sketches", "totems", 
-	"clay-figures", "clay-heads", 
-	"recent-work"
+	"clay-figures", "clay-heads"
 ];
 
-
-
+var bio = "MARILYN J FRIEDMAN began as a figurative sculptor, developing the rhythms, dynamics, and motifs of the human form - creating a vocabulary in clay which evolved into a language of personal imagery and content. <br/> She studied sculpture at The Art Students League of New York, Skowhegan School of Painting and Sculpture, The University of Siena, Italy, and received a BA in Art History and Sculpture from Stony Brook University. <br/> She has received numerous grants and awards for her portrait, figurative, and abstract works from organizations such as The National Academy of Design, The National Sculpture Society, and The National Arts Club. She has created commissioned sculpture for Kohler, Lufthansa, and Absolut, and her work is in many private collections. <br/> Ms. Friedman has taught sculpture at Parsons School of Design, and has been on the sculpture faculty of the National Academy School. She is currently an Instructor at The Art Students League of New York. <br/> Marilyn J Friedman is a recipient of the 2014 Adolph &amp; Esther Gottlieb Foundation Grant in recognition of her work as a sculptor.";
 
 
 

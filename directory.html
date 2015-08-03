@@ -9,70 +9,60 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/directory.css" />
 
   </head>
 
   <body id='directory'>
     <div class='container works'>
-
       <div class='row'>
-        <ul id='topnav'> <li><a href="index.html">Home</a></li> </ul>
+        <div class='col s12 center-align'>
+          <ul class='nav top-nav'>
+            <li><a href='index.html'>home</a></li>
+            <li><a href='resume.pdf'>resume</a></li>
+            <li><a href='mailto:marilynjfriedman@gmail.com'>contact</a></li>
+          </ul>
+          <hr/> <br/>
+        </div>
       </div>
-
+      <!-- directory-template gets appended here -->
     </div>
-
-    <script type='text/template' id='nav-template'>
-      <%for(var i = 0; i < nav.length; i++){%>
-        <%if(nav[i].type=='category'){%>
-          <li> <a class='<%=(nav[i].link==curr)?'active':''%>' href='directory.html?category=<%=nav[i].link%>'>
-            <%=nav[i].name%>
-          </a> </li>
-        <%}%>
-      <%}%>
-    </script>
-
-    <script type='text/template' id='works-template'>
-      <div class='row'>
-        <div class='col s12 center-align name hide-on-med-and-up'>
-          <h4><%=name%></h4> 
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col s12'>
-          <table>
-            <tr>
-              <td class='hide-on-small-only right-align name' style='vertical-align:center'> 
-                <h4><%=name%></h4> 
-              </td>
-              <td class='pieces' colspan=2>
-                <div class='row'>
-                  <% for(var i = 0; i < list.length; i++){%>
-                    <% console.log(lib[list]); %>
-                    <% var work = lib[list[i]]; %>
-                    <div class='col s12 m6 valign-wrapper work'>
-                      <a href="work.html?id=<%=list[i]%>"><img class='work-thumbnail' src='images/<%=curr%>/<%=list[i]%>/thumb.png'/></a>
-                      <a href="work.html?id=<%=list[i]%>"><span class='valign' id='work-title'><%=work.name%></span></a>
-                    </div>
-                  <%}%>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </script>
-
-
   </body>
+
+  <script type='text/template' id='directory-template'>
+  
+    <% for(var i = 0; i < ord.length; i++) { %> 
+      <div class='row'>
+        <div class='col s12 m4 name-col'>
+          <h4 class='hide-on-small-only right-align <%=(curr==ord[i])?"active":""%>'>  
+            <%=dir[ord[i]].name%> 
+          </h4>
+          <h4 class='hide-on-med-and-up center-align <%=(curr==ord[i])?"active":""%>'>  
+            <%=dir[ord[i]].name%> 
+          </h4>
+        </div>
+        <div class='col s12 m8 pieces-col'>
+          <% for(var j = 0; j < dir[ord[i]].works.length; j++) {%>
+            <% work = lib[dir[ord[i]].works[j]]; %>
+            <% console.log(work) %>
+            <a class='' href="work.html?id=<%=dir[ord[i]].works[j]%>">
+              <img class='work-thumbnail' src='images/<%=ord[i]%>/<%=dir[ord[i]].works[j]%>/thumb.png'/>
+            </a>
+          <% } %>
+        </div>
+      </div>
+    <% } %>
+
+  </script>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-  <script src="data.js"></script>
-  <script src="home.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
 
 </html>

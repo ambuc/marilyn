@@ -13,211 +13,199 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/work.css" />
 
   </head>
 
   <body id='work'>
     <div class='container'>
       <div class='row'>
-        <ul id='topnav'> <li><a href="index.html">Home</a></li> </ul>
+        <ul class='nav top-nav'> 
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li> 
+        </ul>
       </div>
       <div class='row content-row'>
         <div class='col s12 content-col'>
-          <span class='content'>
-          </span>
+          <span class='content'> </span>
         </div>
       </div>
     </div>
   </body>
 
 
-<script type='text/template' id='work-template'>
-  <div class='hide-on-large-only'>
-    <br/>
-    <div class='row'>
-      <div class='col s4'>
-        <a class='black white-text arrow-back' href='<%=prev%>'> 
-          <i class='material-icons small'>arrow_back</i> 
-        </a>
-      </div>
-      <div class='col s4'>
-        <p class='inst'>tap to zoom</p>
-      </div>
-      <div class='col s4'>
-        <a class='black white-text arrow-forward' href='<%=next%>'> 
-          <i class='material-icons small'>arrow_forward</i> 
-        </a>
-      </div>
-    </div>
-    <div class='row'>
-      <div class='s12'>
-        <table>
-          <tr>
-            
-            <% if ( images==1 ) { %>
-              <td class='td-center' colspan=2>
-                <img class="main-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/main.png'/>
-              </td>
-            <% } else if ( images == 2 && layout == 'left-right' ) { %>
-              <td class='td-center' colspan=2>
-                <img class="left-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/left.png' />
-              </td>
-              <td class='td-center' colspan=2>
-                <img class="right-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/right.png' />
-              </td>
-            <% } else if ( images == 2 && layout == 'top-bottom' ) { %>
-              <td class='td-center' colspan=2>
-                <img class="top-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/top.png'/>
-                <img class="bottom-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/bottom.png'/>
-              </td>
-            <% } else if ( images == 3 ) {%>
+  <script type='text/template' id='left-arrow-template'>
+    <a class='black white-text' href='<%=link%>'> 
+      <i class='material-icons small'>keyboard_arrow_left</i> 
+    </a>
+  </script>
 
-            <% } %>
+  <script type='text/template' id='right-arrow-template'>
+    <a class='black white-text' href='<%=link%>'> 
+      <i class='material-icons small'>keyboard_arrow_right</i> 
+    </a>
+  </script>
 
-            <% if (details == 0 ) { %>
-            <% } else if (details == 1 ) { %>
-              <td style='vertical-align:bottom'>
-                <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail.png' />
-              </td>
-            <% } else if (details == 2 ) { %>
-              <td style='vertical-align:bottom'>
-                <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-1.png' />
-              </td>
-              <td style='vertical-align:bottom'>
-                <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-2.png' />
-              </td>
-            <% } %>
-
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class='row'>
-      <div class='s12'>
-        <h4><%=name%></h4>
-        <p> <%=materials%><br/> <%=x%>'' x <%=y%>'' x <%=z%>''h </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='hide-on-med-and-down'>
-    <table>
-      <tr class='tr-top'>
-        <td class='td-left'>
-          <a class='black white-text arrow-back' href='<%=prev%>'> 
-            <i class='material-icons small'>arrow_back</i> 
-          </a>
-        </td>
-        <% if ( images==1 ) { %>
-          <td class='td-center' rowspan=2>
-            <img class="main-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/main.png'/>
-          </td>
-        <% } else if ( images == 2 && layout == 'left-right' ) { %>
-          <td class='td-center' rowspan=2>
-            <img class="left-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/left.png' />
-          </td>
-          <td class='td-center' rowspan=2>
-            <img class="right-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/right.png' />
-          </td>
-        <% } else if ( images == 2 && layout == 'top-bottom' ) { %>
-          <td class='td-center' rowspan=2>
-            <img class="top-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/top.png'/>
-            <img class="bottom-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/bottom.png'/>
-          </td>
-        <% } else if ( images == 3 ) {%>
-
-        <% } %>
-        <td class='td-right'>
-          <a class='black white-text arrow-forward' href='<%=next%>'> 
-            <i class='material-icons small'>arrow_forward</i> 
-          </a>
-        </td>
-      </tr>
-
-      <tr class='tr-bottom'>
-        <td class='td-left'>
-          <h4><%=name%></h4>
-          <p> <%=materials%><br/> <%=x%>'' x <%=y%>'' x <%=z%>''h </p>
-        </td>
-
-        <td class='td-right'>
-          <% if (details == 0 ) { %>
-          <% } else if (details == 1 ) { %>
-            <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail.png' />
-          <% } else if (details == 2 ) { %>
-            <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-1.png' />
-            <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-2.png' />
-          <% } %>
-        </td>
-      </tr>
-    </table>  
-  </div>
-
-</script>
+  <script type='text/template' id='plaque-template'>
+    <h4><%=name%></h4>
+    <p> <%=materials%><br/> <%=x%>'' x <%=y%>'' x <%=z%>''h </p>
+  </script>
 
 
   <script type='text/template' id='work-template'>
-    <table>
-      <tr class='top-row'>
-        
-        <td class='left-col'> 
-          <a class='black white-text arrow-back' href='<%=prev%>'> <i class='material-icons small'>arrow_back</i> </a>
-        </td>
 
-        <% if ( images==1 ) { %>
-          <td rowspan=2 id='image-cell'>
-            <img class="main-image materialboxed" src='images/<%=category%>/<%=id%>/main.png'/>
+    <!-- mobile - for small + med -->
+    <span class='hide-on-large-only small-view'>
+
+      <div class='row small-top-row'>
+
+        <div class='col s4 arrow-back'> </div>
+
+        <div class='col s4 inst'> <p>Tap to Zoom</p> </div>
+
+        <div class='col s4 arrow-forward'> </div>
+
+      </div>
+
+      <div class='row small-image-row'>
+
+        <div class='s12'>
+          <table>
+            <tr>  
+              <% if ( images==1 ) { %>
+                
+                <td class='td-center' colspan=2>
+                  <img class="main-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/main.png'/>
+                </td>
+
+              <% } else if ( images == 2 && layout == 'left-right' ) { %>
+
+                <td class='td-center' colspan=2>
+                  <img class="left-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/left.png' />
+                </td>
+                <td class='td-center' colspan=2>
+                  <img class="right-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/right.png' />
+                </td>
+
+              <% } else if ( images == 2 && layout == 'top-bottom' ) { %>
+
+                <td class='td-center' colspan=2>
+                  <img class="top-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/top.png'/>
+                  <img class="bottom-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/bottom.png'/>
+                </td>
+
+              <% } else if ( images == 3 ) {%>
+
+              <% } %>
+
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class='row small-text-row'>
+
+        <div class='s12 plaque'> </div>
+
+      </div>
+
+      <div class='row small-detail-row'>
+
+        <% if (details == 0 ) { %>
+
+        <% } else if (details == 1 ) { %>
+
+          <td class='detail-td' style='vertical-align:bottom'>
+            <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail.png' />
           </td>
-        <% } else if ( images == 2 && layout == 'left-right' ) { %>
-          <td rowspan=2 id='image-cell'>
-            <img class="left-image materialboxed" src='images/<%=category%>/<%=id%>/left.png'/>
+
+        <% } else if (details == 2 ) { %>
+
+          <td class='detail-td' style='vertical-align:bottom'>
+            <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-1.png' />
           </td>
-          <td rowspan=2 id='image-cell'>
-            <img class="right-image materialboxed" src='images/<%=category%>/<%=id%>/right.png'/>
+          <td class='detail-td' style='vertical-align:bottom'>
+            <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-2.png' />
           </td>
-        <% } else if ( images == 2 && layout == 'top-bottom' ) { %>
-          <td id='image-cell'>
-            <img class="top-image materialboxed" src='images/<%=category%>/<%=id%>/top.png'/>
-          </td>
-        <% } else if ( images == 3 ) {%>
 
         <% } %>
-        
-        <td class='right-col'> 
-          <a class='black white-text arrow-forward' href='<%=next%>'> <i class='material-icons small'>arrow_forward</i> </a>
-        </td>
-      </tr>
 
-      <tr class='bottom-row'>
-        <td class='left-col'>
-          <h4><%=name%></h4>
-          <p> <%=materials%><br/> <%=x%>'' x <%=y%>'' x <%=z%>''h </p>
-        </td>
+      </div>
 
-        <% if ( images == 2 && layout == 'top-bottom' ) { %> 
-          <td rowspan=2 id='image-cell'>
-            <img class="bottom-image materialboxed" src='images/<%=category%>/<%=id%>/bottom.png'/>
-          </td>
-        <% } %>
-        
-        <td class='right-col'>
-          <% if (details == 0 ) { %>
-          <% } else if (details == 1 ) { %>
-            <img class="detail-image materialboxed" src='images/<%=category%>/<%=id%>/detail.png' />
-          <% } else if (details == 2 ) { %>
-            <img class="detail-image materialboxed" src='images/<%=category%>/<%=id%>/detail-1.png' />
-            <img class="detail-image materialboxed" src='images/<%=category%>/<%=id%>/detail-2.png' />
+    </span>
+
+    <!-- computer - for large only -->
+
+    <span class='hide-on-med-and-down big-view'>
+      <table>
+        <tr class='tr-top'>
+
+          <td class='td-left arrow-back'> </td>
+
+          <% if ( images==1 ) { %>
+
+            <td class='td-center image-td one-image' rowspan=2>
+              <img class="main-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/main.png'/>
+            </td>
+
+          <% } else if ( images == 2 && layout == 'left-right' ) { %>
+
+            <td class='td-center image-td two-images left-right' colspan=2 rowspan=2>
+              <img class="left-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/left.png' />
+              <img class="right-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/right.png' />
+            </td>
+
+          <% } else if ( images == 2 && layout == 'top-bottom' ) { %>
+
+            <td class='td-center image-td two-images top-bottom' colspan=2 rowspan=2>
+              <img class="top-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/top.png'/>
+              <img class="bottom-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/bottom.png'/>
+            </td>
+
+          <% } else if ( images == 3 ) {%>
+
           <% } %>
-        </td>
-      </tr>
-    </table>  
+
+          <td class='td-right arrow-forward'> </td>
+
+        </tr>
+
+        <tr class='tr-bottom'>
+
+          <td class='td-left plaque'> </td>
+
+          <td class='td-right'>
+
+            <% if (details == 0 ) { %>
+
+            <% } else if (details == 1 ) { %>
+
+              <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail.png' />
+
+            <% } else if (details == 2 ) { %>
+
+              <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-1.png' />
+              <img class="detail-image responsive-img materialboxed" src='images/<%=category%>/<%=id%>/detail-2.png' />
+
+            <% } %>
+
+          </td>
+        </tr>
+      </table>  
+    </span>
+
   </script>
+
 
   <script type='text/template' id='nav-item-template'>
       <%for(var i = 0; i < nav.length; i++){%>
         <%if(nav[i].type=='category'){%>
-        <li> <a href='directory.html?category=<%=nav[i].link%>'>
+        <li> <a href='directory.html?c=<%=nav[i].link%>'>
           <%=nav[i].name%>
         </a> </li>
         <%}%>
@@ -227,7 +215,7 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-  <script src="data.js"></script>
-  <script src="home.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
 
 </html>
