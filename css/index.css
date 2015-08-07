@@ -59,3 +59,7 @@ ul.top-nav li{
 	margin-right:	10px;
 	margin-left:	10px;
 } 
+
+img.materialboxed:hover{
+	opacity:1 !important;
+}

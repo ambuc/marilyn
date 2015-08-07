@@ -616,7 +616,7 @@ var lib = {
 		"materials": "Terra Cotta",
 		"x": "15",
 		"y": "19",
-		"z": "51.75",
+		"z": "52",
 		"images": 2,
 		"layout": "left-right",
 		"details": 0
