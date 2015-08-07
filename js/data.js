@@ -80,9 +80,8 @@ var lib = {
 		"x": "8",
 		"y": "8",
 		"z": "18.5",
-		"images": 2,
-		"layout" : "left-right",
-		"details": 0
+		"images": 1,
+		"details": 1
 	},
 	"reclining-male" : {
 		"name": "Reclining Male",
