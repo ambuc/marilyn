@@ -653,7 +653,7 @@ var lib = {
 	},
 	"artists-mother" : {
 		"name": "Artist's Mother",
-		"materials": "6ft Fired Clay",
+		"materials": "Fired Clay",
 		"x": "20",
 		"y": "24",
 		"z": "72",
