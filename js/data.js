@@ -114,7 +114,7 @@ var lib = {
 	},
 	"painted-figure" : {
 		"name": "Painted Figure",
-		"materials": "Acrylic & Wax on Hydrocal & Wood",
+		"materials": "Pigment & Wax on Hydrocal & Wood",
 		"x": "8",
 		"y": "10",
 		"z": "73",
@@ -342,7 +342,7 @@ var lib = {
 	},
 	"totem" : {
 		"name": "Totem",
-		"materials": "Fired Clay w/ Wood, Graphite, Acrylic",
+		"materials": "Fired Clay w/ Wood, Graphite, Pigment",
 		"x": "4",
 		"y": "4",
 		"z": "68",
@@ -369,7 +369,7 @@ var lib = {
 	},
 	"painted-totem" : {
 		"name": "Painted Totem",
-		"materials": "Acrylic on Hydrocal",
+		"materials": "Pigment on Hydrocal",
 		"x": "6",
 		"y": "6",
 		"z": "46.5",
@@ -466,7 +466,7 @@ var lib = {
 	},
 	"green-figure" : {
 		"name": "Green Figure",
-		"materials": "Fired Clay w/ Burnished Acrylic",
+		"materials": "Fired Clay w/ Burnished Pigment",
 		"x": "10",
 		"y": "15",
 		"z": "48",
@@ -526,7 +526,7 @@ var lib = {
 	},
 	"long-blue-head" : {
 		"name": "Long Blue Head",
-		"materials": "Fired Clay w/ Burnished Acrylic",
+		"materials": "Fired Clay w/ Burnished Pigment",
 		"x": "4.5",
 		"y": "9",
 		"z": "29",
