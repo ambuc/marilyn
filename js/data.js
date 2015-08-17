@@ -592,7 +592,7 @@ var lib = {
 		"details": 1
 	},
 	"running-figure-3" : {
-		"name": "Runing Figure III",
+		"name": "Running Figure III",
 		"materials": "Fired Clay",
 		"x": "20",
 		"y": "20",
