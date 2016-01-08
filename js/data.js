@@ -670,7 +670,16 @@ var lib = {
 		"images": 2,
 		"layout": "left-right",
 		"details": 1
-	}
+	},
+  "time-forms-3" : {
+    "name": "Time/Forms III",
+    "materials": "Fired Clay",
+    "x": "20",
+    "y": "24",
+    "z": "46",
+    "images": 1,
+    "details": 0
+  }
 };
 
 //dir -- ordered list of works within a category 
@@ -708,7 +717,7 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
+		"works" : ["time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
 	}
 };
 
