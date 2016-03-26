@@ -649,7 +649,7 @@ var lib = {
 		"z": "40",
 		"images": 2,
 		"layout": "left-right",
-		"details": 0
+		"details": 1
 	},
 	"artists-mother" : {
 		"name": "Artist's Mother",
