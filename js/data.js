@@ -408,7 +408,7 @@ var lib = {
 	},
 	"terra-cotta-figure-1" : {
 		"name": "Terra Cotta Figure I",
-		"materials": "Fired Clay",
+		"materials": "Terra Cotta w/ Burnished Pigment",
 		"x": "6",
 		"y": "7",
 		"z": "42",
