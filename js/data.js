@@ -679,7 +679,7 @@ var lib = {
     "z": "46",
 		"images": 2,
 		"layout": "left-right",
-    "details": 0
+    "details": 1
   }
 };
 
