@@ -633,7 +633,7 @@ var lib = {
 	},
 	"running-figure-2" : {
 		"name": "Running Figure II",
-		"materials": "Fired Clay",
+		"materials": "Fired Clay w/ Pigment & Wax",
 		"x": "10",
 		"y": "15",
 		"z": "36",
