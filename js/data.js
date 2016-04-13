@@ -677,7 +677,8 @@ var lib = {
     "x": "20",
     "y": "24",
     "z": "46",
-    "images": 1,
+		"images": 2,
+		"layout": "left-right",
     "details": 0
   }
 };
