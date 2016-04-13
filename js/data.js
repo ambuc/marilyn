@@ -623,7 +623,7 @@ var lib = {
 	},
 	"figure-shapes" : {
 		"name": "Figure/Shapes",
-		"materials": "Terra Cotta",
+		"materials": "Terra Cotta w/ Pigment",
 		"x": "14",
 		"y": "22",
 		"z": "45",
