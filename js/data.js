@@ -688,7 +688,7 @@ var lib = {
     "y": "36",
     "z": "40",
     "images": 2,
-    "layout": "top-bottom",
+    "layout": "left-right",
     "details": 1
   }
 };
@@ -728,7 +728,7 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms", "running-figure-4"]
+		"works" : ["running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
 	}
 };
 
