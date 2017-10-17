@@ -738,7 +738,7 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms", "directional-figure"]
+		"works" : ["directional-figure", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
 	}
 };
 
