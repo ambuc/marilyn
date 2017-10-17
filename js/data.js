@@ -604,9 +604,9 @@ var lib = {
 	"sacrifice" : {
 		"name": "Sacrifice",
 		"materials": "Fired Clay",
-		"x": "28",
-		"y": "30",
-		"z": "58",
+		"x": "16",
+		"y": "17",
+		"z": "37",
 		"images": 2,
 		"layout": "left-right",
 		"details": 1
@@ -690,6 +690,16 @@ var lib = {
     "images": 2,
     "layout": "left-right",
     "details": 1
+  },
+  "directional-figure" : {
+    "name": "Directional Figure",
+    "materials": "Fired Clay",
+    "x": "30",
+    "y": "32",
+    "z": "38",
+    "images": 2,
+    "layout": "left-right",
+    "details": 0
   }
 };
 
@@ -728,7 +738,7 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
+		"works" : ["running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms", "directional-figure"]
 	}
 };
 
