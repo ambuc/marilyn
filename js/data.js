@@ -47,6 +47,15 @@ var lib = {
 		"images": 1,
 		"details": 0
 	},
+	"tika" : {
+		"name": "Tika",
+		"materials": "Terra Cotta",
+		"x": "10",
+		"y": "12",
+		"z": "15",
+		"images": 1,
+		"details": 0
+	},
 	"sid" : {
 		"name": "Sid Rothberg",
 		"materials": "Fired Clay w/ Wax",
@@ -691,6 +700,16 @@ var lib = {
     "layout": "left-right",
     "details": 1
   },
+  "directional-figure-2" : {
+    "name": "Directional Figure II",
+    "materials": "Fired Clay",
+    "x": "17",
+    "y": "35",
+    "z": "37",
+    "images": 2,
+    "layout": "left-right",
+    "details": 0
+  },
   "directional-figure" : {
     "name": "Directional Figure",
     "materials": "Fired Clay",
@@ -708,7 +727,7 @@ var dir = {
 	"portraits" : {
 		"name" : "Portraits",
 		"link" : "portraits",
-		"works" : ["rene", "jabbo", "manuel", "sue", "james", "sid", "jennifer", "brian"]
+		"works" : ["rene", "jabbo", "manuel", "sue", "james", "tika", "sid", "jennifer", "brian"]
 	},
 	"early-figurative" : {
 		"name" : "Early Figurative",
@@ -723,7 +742,7 @@ var dir = {
 	"totems" : {
 		"name" : "Totems",
 		"link" : "totems",
-		"works" : ["totem-sketch", "sketch-1", "sketch-2", "sketch-with-hat", "apt-totem", "totem", "man-with-hat-1", "dark-totem", "painted-totem", "aluminum-figure"]
+		"works" : [ "aluminum-figure", "painted-totem", "dark-totem", "man-with-hat-1", "totem", "apt-totem", "sketch-with-hat", "sketch-2", "sketch-1", "totem-sketch" ]
 	},
 	"clay-figures" : {
 		"name" : "Clay Figures",
@@ -738,7 +757,7 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["directional-figure", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
+		"works" : ["directional-figure-2", "directional-figure", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
 	}
 };
 
