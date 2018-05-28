@@ -594,8 +594,8 @@ var lib = {
 		"name": "Time/Forms I",
 		"materials": "Fired Clay",
 		"x": "16",
-		"y": "37",
-		"z": "55",
+		"y": "28",
+		"z": "52",
 		"images": 2,
 		"layout": "left-right",
 		"details": 1
@@ -613,11 +613,10 @@ var lib = {
 	"sacrifice" : {
 		"name": "Sacrifice",
 		"materials": "Fired Clay",
-		"x": "16",
-		"y": "17",
-		"z": "37",
-		"images": 2,
-		"layout": "left-right",
+		"x": "15",
+		"y": "16",
+		"z": "36",
+		"images": 1,
 		"details": 1
 	},
 	"tall-head" : {
