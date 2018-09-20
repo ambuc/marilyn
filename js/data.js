@@ -689,6 +689,16 @@ var lib = {
 		"layout": "left-right",
     "details": 1
   },
+	"time-forms-4" : {
+		"name": "Time/Forms IV",
+		"materials": "Fired Clay",
+		"x": "20",
+		"y": "32",
+		"z": "44",
+		"images": 2,
+		"layout": "left-right",
+		"details": 1
+	},
   "running-figure-4" : {
     "name": "Running Figure IV",
     "materials": "Fired Clay",
@@ -741,7 +751,7 @@ var dir = {
 	"totems" : {
 		"name" : "Totems",
 		"link" : "totems",
-		"works" : [ "aluminum-figure", "painted-totem", "dark-totem", "man-with-hat-1", "totem", "apt-totem", "sketch-with-hat", "sketch-2", "sketch-1", "totem-sketch" ]
+		"works" : [ "aluminum-figure", "painted-totem", "dark-totem", "man-with-hat-1", "totem", "apt-totem", "sketch-with-hat", "sketch-2", "totem-sketch" ] // sketch-1
 	},
 	"clay-figures" : {
 		"name" : "Clay Figures",
@@ -751,12 +761,12 @@ var dir = {
 	"clay-heads" : {
 		"name" : "Clay Heads",
 		"link" : "clay-heads",
-		"works" : ["greek-head", "surprised-head", "split-head", "braid", "pontiac-head", "long-blue-head", "male-head", "big-head", "painted-head", "head-form-1"]
+		"works" : ["greek-head", "surprised-head", "split-head", "braid", "pontiac-head", "long-blue-head", "male-head", "big-head", "painted-head"] // head-form-1
 	},
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["directional-figure-2", "directional-figure", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
+		"works" : ["directional-figure-2", "directional-figure", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms", "time-forms-4"]
 	}
 };
 
