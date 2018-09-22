@@ -650,7 +650,7 @@ var lib = {
 		"details": 1
 	},
 	"figure-form-1" : {
-		"name": "Figure Form I",
+		"name": "Figure/Forms I",
 		"materials": "Terra Cotta w/ Pigment & Wax",
 		"x": "16",
 		"y": "20",
