@@ -687,7 +687,7 @@ var lib = {
     "z": "46",
 		"images": 2,
 		"layout": "left-right",
-    "details": 1
+    "details": 0
   },
 	"time-forms-4" : {
 		"name": "Time/Forms IV",
@@ -697,7 +697,7 @@ var lib = {
 		"z": "44",
 		"images": 2,
 		"layout": "left-right",
-		"details": 1
+		"details": 0
 	},
   "running-figure-4" : {
     "name": "Running Figure IV",
@@ -719,8 +719,8 @@ var lib = {
     "layout": "left-right",
     "details": 0
   },
-  "directional-figure" : {
-    "name": "Directional Figure",
+  "directional-figure-1" : {
+    "name": "Directional Figure I",
     "materials": "Fired Clay",
     "x": "30",
     "y": "32",
@@ -766,7 +766,7 @@ var dir = {
 	"recent-work" : {
 		"name" : "Recent Work",
 		"link" : "recent-work",
-		"works" : ["time-forms-4", "directional-figure-2", "directional-figure", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
+		"works" : ["time-forms-4", "directional-figure-2", "directional-figure-1", "running-figure-4", "time-forms-3", "time-forms-2", "time-forms-1", "running-figure-3", "sacrifice", "tall-head", "figure-shapes", "running-figure-2", "figure-form-1", "artists-mother", "head-forms"]
 	}
 };
 
