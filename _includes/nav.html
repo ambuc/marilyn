@@ -1,0 +1,15 @@
+{% assign nav = site.data.nav %}
+<div class="row border-bottom justify-content-center mb-3 pb-1">
+  <div class="col-auto">
+    <ul class="nav p-2 justify-content-center">
+      {% for i in nav %}
+      <li class="nav-item"> 
+        <a class="nav-link fancy-font text-reset"
+           href="{{i.link}}">
+          {{i.displayname}}
+        </a> 
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+{% comment %}
+Args:
+  left: url or ""
+  right: url or ""
+  default: url
+
+  name
+  materials
+  materials2
+{% endcomment %}
+
+<div class="row align-items-center pb-3">
+  <div class="col text-left">
+    {% if include.left != "" %}
+      {% include arrow-left.html url=include.left %}
+    {% else %}
+      {% include button-grid.html url=include.default %}
+    {% endif %}
+  </div>
+  <div class="col text-center">
+    {% include plaque.html
+       name=include.name
+       materials=include.materials
+       materials2=include.materials2
+       %}
+  </div>
+  <div class="col text-right">
+    {% if include.right != "" %}
+      {% include arrow-right.html url=include.right %}
+    {% else %}
+      {% include button-grid.html url=include.default %}
+    {% endif %}
+  </div>
+</div>

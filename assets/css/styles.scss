@@ -1,0 +1,109 @@
+---
+---
+
+// COLORS
+$grey2: #222;
+$grey4: #444;
+$grey5: #555;
+$greyA: #aaa;
+$greyD: #ddd;
+
+// GENERAL
+.fancy-font {
+  font-family: 'Belleza', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.plain-font {
+  font-family: 'Martel Sans', sans-serif;
+}
+
+// DIRECTORY
+#directory-title{
+  color: $grey4;
+}
+
+#directory-thumbnail{
+  margin-left: -4px;
+  width: 55px;
+  height:55px;
+}
+
+
+// HOMEPAGE
+#homepage-image{
+  background: linear-gradient(to right, #00000000, #000000ff)
+            , url("/assets/images/homepage-background-image.png") no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+#homepage-links{
+  font-size: 2.3vh;
+  line-height: 2.5em;
+}
+
+ul#homepage-links > li > a { color: $greyA; }
+#homepage-header-name { 
+  color: $greyD; 
+  font-size: 4.0vh;
+}
+#homepage-header-sculptor { 
+  color: $grey5; 
+  font-size: 3.5vh;
+}
+
+#homepage-bio-paragraph > p {
+  // font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.2;
+  color: $grey5;
+}
+
+// MODAL TUNING
+// These are pretty hard to get right.
+
+.sculpture-img {
+  max-height: 90vh;
+}
+.sculpture-img-detail {
+  // max-height: 90vh;
+  // max-height: 100px;
+  width: 50%;
+}
+
+.sculpture-modal .modal-dialog {
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
+.sculpture-modal .img-fluid {
+  object-fit: contain;
+  height: 100vh;
+}
+
+// SCULPTURE
+#sculpture-plaque-title, #sculpture-plaque-materials, #sculpture-plaque-size{
+  color: $grey4;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#sculpture-plaque-title { font-size: 0.8em; }
+#sculpture-plaque-materials { font-size: 0.60em; }
+#sculpture-plaque-size { font-size: 0.55em; }
+#sculpture-tap-to-zoom { font-size: 0.60em; }
+
+
+// NAV
+
+.nav-link {
+  color: $grey4 !important;
+}
+
+// EVENTS
+
+.events-link {
+  color: $grey4 !important;
+}

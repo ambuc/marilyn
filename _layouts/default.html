@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{site.title}}</title>
+    {% include metadata.html %}
+    {% include custom-fonts.html %}
+    {% include bootstrap-css.html %}
+    {% include icons.html %}
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class='container p-3'>
+      {{ content }}
+    </div>
+  </body>
+  {% include bootstrap-js.html %}
+  {% include analytics.html %}
+</html>

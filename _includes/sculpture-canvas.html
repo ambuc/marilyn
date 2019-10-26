@@ -1,0 +1,53 @@
+{% comment %}
+  Args:
+    num_images: The number of images to display
+		orientation: If |num_images| == 2, this must be either "top-bottom" or
+      "left-right". If "top-bottom", the two images are expected to be landscape
+      orientation, and will display one above the other. If "left-right", the
+      two images are expected to be portrait orientation, and will display one
+      after another.
+    path: The path to the directory containing the images.
+{% endcomment %}
+
+{% assign path_to_main   = include.path | append: "/main.png"   %}
+{% assign path_to_top    = include.path | append: "/top.png"    %}
+{% assign path_to_bottom = include.path | append: "/bottom.png" %}
+{% assign path_to_left   = include.path | append: "/left.png"   %}
+{% assign path_to_right  = include.path | append: "/right.png"  %}
+
+{% if include.num_images == 1 %}
+
+  <div class="row align-items-center ">
+    <div class="col mx-auto text-center">
+      {% include sculpture-image-and-modal.html path=path_to_main identifier="main" %}
+    </div>
+  </div>
+
+{% elsif include.num_images == 2 %}
+
+  {% if include.orientation == "top-bottom" %}
+    <!--top-bottom-->
+    <div class="row h-50 align-items-end ">
+      <div class="col  pb-1">
+        {% include sculpture-image-and-modal.html path=path_to_top identifier="top" %}
+      </div>
+    </div>
+    <div class="row h-50 align-items-start ">
+      <div class="col pt-1">
+        {% include sculpture-image-and-modal.html path=path_to_bottom identifier="bottom" %}
+      </div>
+    </div>
+
+  {% else %}
+
+    <div class="row align-items-center">
+      <div class="col-6 pr-1 text-right">
+        {% include sculpture-image-and-modal.html path=path_to_left identifier="left" %}
+      </div>
+      <div class="col-6 pl-1 text-left">
+        {% include sculpture-image-and-modal.html path=path_to_right identifier="right" %}
+      </div>
+    </div>
+  {% endif %}
+
+{% endif %}

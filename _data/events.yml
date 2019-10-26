@@ -1,0 +1,18 @@
+- id: events-walking-figure
+  displayname: Boyd Sculpture Garden
+  link: walking-figure.html
+- id: belskie
+  displayname: Belskie Museum of Art
+  link: belskie.html
+- id: pomona
+  displayname: Pomona Cultural Center
+  link: pomona.html
+- id: blue-hill
+  displayname: Blue Hill Art & Cultural Center
+  link: blue-hill.html
+- id: sullivan
+  displayname: Elizabeth Sullivan Gallery
+  link: sullivan.html
+- id: asl
+  displayname: Art Students League Portrait Demo
+  link: asl.html

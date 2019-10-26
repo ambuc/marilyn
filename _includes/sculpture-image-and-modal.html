@@ -1,0 +1,27 @@
+{% comment %}
+  Args:
+    path: The path to the image in question.
+    identifier: A string which must be unique per-page, since modals and the
+      buttons which spawn/destruct them are keyed per-string.
+{% endcomment %}
+
+{% if include.detail %}
+  <img class="sculpture-img-detail img-fluid" 
+{% else %}
+  <img class="sculpture-img img-fluid" 
+{% endif %}
+       src="{{include.path}}"
+       data-toggle="modal" 
+       data-target="#modal-{{include.identifier}}" />
+
+  <div class="modal sculpture-modal fade" 
+       id="modal-{{include.identifier}}" 
+       tabindex="-1">
+    <div class="modal-dialog modal-xl p-0 m-0">
+      <div class="modal-content p-0 m-0">
+        <img class="img-fluid"
+             src="{{include.path}}" 
+             data-dismiss="modal"/>
+      </div>
+    </div>
+  </div>

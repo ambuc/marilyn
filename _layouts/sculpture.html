@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+{% assign page_id_split = page.id | split: '/' %}
+{% assign collection_id = page_id_split[1] %}
+
+{% assign works = site.data.categories[collection_id].works %}
+{% assign shortname = page.id | split: '/' | last %}
+{% for work_id in works %}
+  {% if work_id == shortname %}
+    {% unless forloop.first %}
+      {% assign prev_idx = forloop.index0 | minus: 1 %}
+      {% assign prev_id = works[prev_idx] %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next_idx = forloop.index0 | plus: 1 %}
+      {% assign next_id = works[next_idx] %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% capture path_to_assets %}/assets/images/{{shortname}}{% endcapture %}
+
+{% assign path_to_prev = "/directory" %}
+{% if prev_id %}
+  {% capture path_to_prev %}/{{collection_id}}/{{prev_id}}{% endcapture %}
+{% endif %}
+
+{% assign path_to_next = "/directory" %}
+{% if next_id %}
+  {% capture path_to_next %}/{{collection_id}}/{{next_id}}{% endcapture %}
+{% endif %}
+
+<script>
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37' && !e.altKey) { window.location = '{{path_to_prev}}'; }
+    if (e.keyCode == '39' && !e.altKey) { window.location = '{{path_to_next}}'; }
+  };
+</script>
+
+<div class="row d-md-none justify-content-center py-3">
+  <div class="col text-center"> 
+    {% include arrow-left.html 
+       url=path_to_prev %}
+  </div>
+  <div id="sculpture-tap-to-zoom" class="col fancy-font text-center text-dark">
+    tap to zoom
+  </div>
+  <div class="col text-center"> 
+    {% include arrow-right.html 
+       url=path_to_next %} 
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-10 col-12 no-gutters">
+    {% include sculpture-canvas.html 
+       path=path_to_assets orientation=page.orientation num_images=page.images %}
+  </div>
+  <div class="col-md-2 d-none d-md-block no-gutters px-0">
+    <div class="row h-100">
+      <div class="col text-right align-self-start">
+        <div class="mb-2">
+        {% include button-home.html %}
+        &nbsp; 
+        {% include button-grid.html url="/directory" %}
+        </div>
+        <div>
+        {% include arrow-left.html url=path_to_prev %} 
+        &nbsp;
+        {% include arrow-right.html url=path_to_next %}
+        </div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col text-right align-self-end">
+      {% include details.html num_details=page.details path_to_assets=path_to_assets id="landscape" %}
+      {% include plaque.html name=page.name materials=page.materials x=page.x y=page.y z=page.z %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row d-md-none justify-content-center p-3">
+  <div class="col text-center">
+  {% include plaque.html 
+    name=page.name materials=page.materials x=page.x y=page.y z=page.z %}
+  </div>
+</div>
+
+{% if page.details == 1 or page.details == 2 %}
+<div class="row d-md-none justify-content-center p-3">
+  <div class="col-4"></div>
+  <div class="col-4 text-center">
+    {% include details.html 
+       num_details=page.details 
+       path_to_assets=path_to_assets id="portrait" %}
+  </div>
+  <div class="col-4"></div>
+</div>
+{% endif %}
+
+<div class="row d-md-none justify-content-center p-3">
+  <div class="col text-left"> 
+    {% include button-grid.html 
+       url="/directory" %} 
+  </div>
+  <div class="col text-right"> 
+    {% include button-home.html %} 
+  </div>
+</div>
+

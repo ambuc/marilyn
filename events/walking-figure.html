@@ -1,88 +1,32 @@
+---
+layout: default
+---
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Marilyn J Friedman • Sculptor</title>
+{% include nav.html %}
 
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-
-    <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <link rel="stylesheet" type="text/css" href="../css/events.css" />
-
-  </head>
-
-  <body id='event'>
-    <div class='container'>
-    
-      <div class='row'>
-        <div class='col s12 center-align'>
-          <ul class='nav top-nav'>
-            <li><a href='../index.html'>home</a></li>
-            <li><a href='../directory.html'>sculpture</a></li>
-            <li><a class='active' href='../events.html'>events</a></li>
-            <li><a href='../resume.pdf'>resume</a></li>
-            <li><a href='mailto:marilynjfriedman@gmail.com'>contact</a></li>
-          </ul>
-          <hr/>
-        </div>
+<div class="row">
+  <div class="col-12 col-lg-10">
+    <div class="row">
+      <div class="col text-lg-right">
+        {% include sculpture-image-and-modal.html
+           path="/assets/images/events-walking-figure/main.png" 
+           identifier="main" %}
       </div>
-
-      <div class='row'>
-        <div class='col s1 left-align'>
-          <a href='../events.html'>
-            <i class='material-icons small'> apps </i>
-          </a>
-        </div>
-        <div class='col s10'>
-          <table style='table-layout:fixed;'>
-            <tr>
-              <td colspan=1 class='right-align'>
-                <img class='responsive-img materialboxed' src='../images/events/walking-figure/main.png'/>
-              </td>
-              <td colspan=1 style='vertical-align:bottom;'>
-                <h4>
-                  <i>Walking Figure</i>, 2009<br/>
-                </h4>
-                <p>
-                    Boyd Sculpture Garden, NJ
-                    <br/>
-                    6 ft fired clay enlargement of 4 ft <a href='../work.html?id=green-figure'>original</a>.
-                </p>
-                <img class='responsive-img materialboxed' src='../images/events/walking-figure/second.png'/>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class='col s1 right-align'>
-          <a href='belskie.html'>
-            <i class='material-icons small'> keyboard_arrow_right </i>
-          </a>
-        </div>
+      <div class="col">
+        {% include sculpture-image-and-modal.html
+           path="/assets/images/events-walking-figure/second.png" 
+           identifier="second" %}
       </div>
     </div>
-  </body>
-
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-  <script src="../js/data.js"></script>
-  <script src="../js/home.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111298424-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-111298424-1');
-  </script>
-
-</html>
+  </div>
+  <div class="col-12 col-lg-2 text-center text-lg-right py-2 py-lg-0">
+    {% include arrow-left.html url="/events" %}
+    {% include arrow-right.html url="/events/belskie" %}
+    {% include plaque.html 
+       name="WALKING FIGURE" 
+       materials="BOYD SCULPTURE GARDEN, NJ"
+       materials2="INSTALLATION 2009"
+       materials3="6 FT FIRED CLAY ENLARGEMENT OF 4 FT ORIGINAL."
+    %}
+  </div>
+</div>

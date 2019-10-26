@@ -1,0 +1,106 @@
+# ordered list of categories
+list:
+  - recent-work
+  - clay-figures
+  - clay-heads
+  - totems
+  - early-figurative
+  - figure-sketches
+  - portraits
+
+# map from cat_id to ordered list of works within a category 
+recent-work:
+  displayname: Recent Work
+  works:
+    - "time-forms-4"
+    - "directional-figure-2"
+    - "directional-figure-1"
+    - "running-figure-4"
+    - "time-forms-3"
+    - "time-forms-2"
+    - "time-forms-1"
+    - "running-figure-3"
+    - "sacrifice"
+    - "tall-head"
+    - "figure-shapes"
+    - "running-figure-2"
+    - "figure-form-1"
+    - "artists-mother"
+    - "head-forms"
+clay-figures:
+  displayname: Clay Figures
+  works:
+    - "clay-figure-1"
+    - "running-figure"
+    - "terra-cotta-figure-1"
+    - "man-with-hat-2"
+    - "head-and-torso-1"
+    - "head-and-torso-2"
+    - "standing-figure"
+    - "terra-cotta-figure-2"
+    - "green-figure"
+clay-heads:
+  displayname: Clay Heads
+  works: 
+    - "greek-head"
+    - "surprised-head"
+    - "split-head"
+    - "braid"
+    - "pontiac-head"
+    - "long-blue-head"
+    - "male-head"
+    - "big-head"
+    - "painted-head"
+totems:
+  displayname: Totems
+  works: 
+    - "aluminum-figure"
+    - "painted-totem"
+    - "dark-totem"
+    - "man-with-hat-1"
+    - "totem"
+    - "apt-totem"
+    - "sketch-with-hat"
+    - "sketch-2"
+    - "totem-sketch"
+early-figurative:
+  displayname: Early Figurative
+  works: 
+    - "reclining-figure"
+    - "reclining-male"
+    - "seated-girl"
+    - "grey-girl"
+    - "painted-figure"
+    - "barn-figure"
+    - "green-man"
+    - "girl-standing"
+    - "walking-man"
+    - "leaning-woman"
+    - "torso"
+figure-sketches:
+  displayname: Figure Sketches
+  works: 
+    - "sitting-figure-1"
+    - "kneeling-figure-1"
+    - "seated-figure-3"
+    - "seated-figure-2"
+    - "kneeling-figure-2"
+    - "seated-figure"
+    - "reclining-figure-1"
+    - "reclining-figure-2"
+    - "figure-relief"
+    - "reclining-totem"
+    - "seated-figure-4"
+    - "leaning-figure"
+portraits:
+  displayname: Portraits
+  works: 
+    - "rene"
+    - "jabbo"
+    - "manuel"
+    - "sue"
+    - "james"
+    - "tika"
+    - "sid"
+    - "jennifer"
+    - "brian"

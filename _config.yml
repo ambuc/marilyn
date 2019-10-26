@@ -1,0 +1,31 @@
+# Welcome to Jekyll!
+title: Marilyn J Friedman • Sculptor
+# email: 
+description: >- 
+  MARILYN J FRIEDMAN began as a figurative sculptor, developing the rhythms,
+  dynamics, and motifs of the human form - creating a vocabulary in clay which
+  evolved into a language of personal imagery and content. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://marilynjfriedman.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+collections_dir: categories
+
+collections:
+  recent-work:
+    output: true
+  clay-figures:
+    output: true
+  clay-heads:
+    output: true
+  totems:
+    output: true
+  early-figurative:
+    output: true
+  figure-sketches:
+    output: true
+  portraits:
+    output: true

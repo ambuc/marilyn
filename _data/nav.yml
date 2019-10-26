@@ -1,0 +1,10 @@
+- displayname: Home
+  link: /
+- displayname: Sculpture
+  link: /directory
+- displayname: Events
+  link: /events
+- displayname: Resume
+  link: /assets/resume.pdf
+- displayname: Contact
+  link: mailto:marilynjfriedman@gmail.com

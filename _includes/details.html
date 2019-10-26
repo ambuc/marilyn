@@ -1,0 +1,38 @@
+{% comment %}
+  Args:
+    num_details
+    path_to_assets
+    id
+{% endcomment %}
+
+
+{% if include.num_details == 1 %}
+<div class="row mb-lg-3">
+  <div class="col">
+    {% assign detail_path = include.path_to_assets | append: "/detail.png" %}
+    {% assign identifier = include.id | append: "detail0" %}
+ 
+    {% include sculpture-image-and-modal.html path=detail_path identifier=identifier detail=true %}
+  </div>
+</div>
+
+{% elsif include.num_details == 2 %}
+
+<div class="row mb-lg-3">
+  <div class="col pt-2">
+    {% assign detail_path = include.path_to_assets | append: "/detail-1.png" %}
+    {% assign identifier = include.id | append: "detail1" %}
+  
+    {% include sculpture-image-and-modal.html path=detail_path identifier=identifier detail=true %}
+  </div>
+  <div class="w-100"></div> 
+  <div class="col pt-2">
+    {% assign detail_path = include.path_to_assets | append: "/detail-2.png" %}
+    {% assign identifier = include.id | append: "detail2" %}
+  
+    {% include sculpture-image-and-modal.html path=detail_path identifier=identifier detail=true%}
+  </div>
+</div>
+
+{% endif %}
+
