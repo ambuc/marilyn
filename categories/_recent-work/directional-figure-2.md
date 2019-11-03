@@ -4,9 +4,8 @@ materials: Fired Clay
 x: 21
 y: 31
 z: 37
-images: 2
-orientation: left-right
-details: 0
+images: 1
+details: 1
 
 layout: sculpture
 ---
