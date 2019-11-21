@@ -1,6 +1,6 @@
 ---
 name: Running Figure II
-materials: Fired Clay w/ Pigment & Wax
+materials: Unfired Clay
 x: 10
 y: 15
 z: 36
