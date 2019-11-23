@@ -1,6 +1,6 @@
 ---
 name: Running Figure II
-materials: Unfired Clay
+materials: Terra Cotta w/ Pigment & Wax
 x: 10
 y: 15
 z: 36

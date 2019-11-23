@@ -1,6 +1,6 @@
 ---
 name: Artist's Mother
-materials: Unfired Clay
+materials: Clay
 x: 20
 y: 24
 z: 72

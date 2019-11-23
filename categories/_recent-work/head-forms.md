@@ -1,6 +1,6 @@
 ---
 name: Head/Forms
-materials: Unfired Clay
+materials: Fired Clay
 x: 16
 y: 18
 z: 37

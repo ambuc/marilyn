@@ -1,6 +1,6 @@
 ---
 name: Time/Forms III
-materials: Unfired Clay
+materials: Fired Clay
 x: 20
 y: 24
 z: 46

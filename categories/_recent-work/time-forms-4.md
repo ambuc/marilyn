@@ -1,6 +1,6 @@
 ---
 name: Time/Forms IV
-materials: Unfired Clay
+materials: Clay
 x: 12
 y: 24
 z: 37

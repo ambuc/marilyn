@@ -1,6 +1,6 @@
 ---
 name: Running Figure III
-materials: Fired Clay
+materials: Clay
 x: 23
 y: 23
 z: 40
