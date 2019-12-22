@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<div class="row">
+  <div class="col-12 col-lg-10">
+    <div class="row align-items-center">
+      <div class="col col-8">
+         {% include sculpture-image-and-modal.html
+            path="/assets/images/gallery-space/left.png" 
+            identifier="left" %}
+      </div>
+      <div class="col col-4">
+        {% include sculpture-image-and-modal.html
+           path="/assets/images/gallery-space/right.png" 
+           identifier="right" %}
+      </div>
+    </div>
+    <div class="w-100 py-2"></div>
+    <div class="row" >
+      <div class="col col-12">
+        {% include sculpture-image-and-modal.html
+           path="/assets/images/gallery-space/main.png" 
+           identifier="main" %}
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-2 text-center text-lg-right py-2 py-lg-0">
+    {% include arrow-left.html url="/events" %}
+    {% include arrow-right.html url="/events/sullivan" %}
+    {% include plaque.html 
+       name="CLAY & WOOD - Solo Exhibition"
+       materials="THE GALLERY SPACE, NJ"
+       materials2="SUMMER 2019"
+       materials3="FIFTEEN SCULPTURES"
+    %}
+  </div>
+</div>
