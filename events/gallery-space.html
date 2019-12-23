@@ -6,24 +6,31 @@ layout: default
 
 <div class="row">
   <div class="col-12 col-lg-10">
-    <div class="row align-items-center">
-      <div class="col col-8">
-         {% include sculpture-image-and-modal.html
-            path="/assets/images/gallery-space/left.png" 
-            identifier="left" %}
-      </div>
-      <div class="col col-4">
-        {% include sculpture-image-and-modal.html
-           path="/assets/images/gallery-space/right.png" 
-           identifier="right" %}
+    <div class="row">
+      <div class="col" style="display:flex;">
+        <div class="mx-2" style="flex:1.57344877;">
+          <!--5452 × 3465-->
+          {% include sculpture-image-and-modal.html
+             path="/assets/images/gallery-space/left.png" 
+             identifier="left" %}
+        </div>
+        <div class="mx-2" style="flex: 0.783655914;">
+          <!--1822 × 2325-->
+          {% include sculpture-image-and-modal.html
+             path="/assets/images/gallery-space/right.png" 
+             identifier="right" %}
+        </div>
+        </span>
       </div>
     </div>
     <div class="w-100 py-2"></div>
     <div class="row" >
-      <div class="col col-12">
+      <div class="col">
+        <div class="mx-2">
         {% include sculpture-image-and-modal.html
            path="/assets/images/gallery-space/main.png" 
            identifier="main" %}
+        </div>
       </div>
     </div>
   </div>
@@ -31,10 +38,11 @@ layout: default
     {% include arrow-left.html url="/events" %}
     {% include arrow-right.html url="/events/sullivan" %}
     {% include plaque.html 
-       name="CLAY & WOOD - Solo Exhibition"
-       materials="THE GALLERY SPACE, NJ"
-       materials2="SUMMER 2019"
-       materials3="FIFTEEN SCULPTURES"
+       name="CLAY & WOOD"
+       materials="Solo Exhibition"
+       materials2="THE GALLERY SPACE, NJ"
+       materials3="SUMMER 2019"
+       materials4="FIFTEEN SCULPTURES"
     %}
   </div>
 </div>
