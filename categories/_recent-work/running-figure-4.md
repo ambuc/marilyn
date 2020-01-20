@@ -1,9 +1,9 @@
 ---
 name: Running Figure IV
 materials: Fired Clay
-x: 20
-y: 36
-z: 40
+x: 13
+y: 30
+z: 42
 images: 1
 details: 1
 
