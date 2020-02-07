@@ -6,7 +6,7 @@ y: 24
 z: 37
 images: 2
 orientation: left-right
-details: 0
+details: 1
 
 layout: sculpture
 ---
