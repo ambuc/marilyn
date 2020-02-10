@@ -4,8 +4,8 @@ materials: Fired Clay
 x: 10
 y: 20
 z: 33
-images: 2
-details: 1
+images: 1
+details: 2
 
 layout: sculpture
 ---
