@@ -1,7 +1,12 @@
- - TODO(ambuc): build-time checks for 
-   - no sculptures without a category
-   - other coherence checks
- - TODO use <picture> element with multiple sizes
- - TODO build events.html
- - TODO modals aren't well-fit to every screen
- - TODO .75 to 3/4, .5 to 1/2, etc.
+## Developer tips
+
+### Setting symlinks
+`ln -s path-to-versioned-file.png shortcut.png`
+
+### Build and serve
+```
+bundle exec jekyll build
+bundle exec jekyll serve
+```
+
+
