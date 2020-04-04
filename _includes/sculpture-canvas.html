@@ -7,51 +7,33 @@
       two images are expected to be portrait orientation, and will display one
       after another.
     path: The path to the directory containing the images.
+
+  Confused about flexbox? Don't worry, me too.
+  https://getbootstrap.com/docs/4.4/utilities/flex/#direction
 {% endcomment %}
 
-{% assign path_to_main   = include.path | append: "/main.png"   %}
-{% assign path_to_top    = include.path | append: "/top.png"    %}
-{% assign path_to_bottom = include.path | append: "/bottom.png" %}
-{% assign path_to_left   = include.path | append: "/left.png"   %}
-{% assign path_to_right  = include.path | append: "/right.png"  %}
+{% assign pMain   = include.path | append: "/main.png"   %}
+{% assign pTop    = include.path | append: "/top.png"    %}
+{% assign pBottom = include.path | append: "/bottom.png" %}
+{% assign pLeft   = include.path | append: "/left.png"   %}
+{% assign pRight  = include.path | append: "/right.png"  %}
 
 {% if include.num_images == 1 %}
-
-  <div class="row align-items-center ">
-    <div class="col mx-auto text-center">
-      {% include sculpture-image-and-modal.html path=path_to_main identifier="main" %}
-    </div>
+  <div class="d-flex flex-row justify-content-center">
+    <div> {% include sculpture-image-and-modal.html path=pMain identifier="main" %} </div>
   </div>
-
 {% elsif include.num_images == 2 %}
-
   {% if include.orientation == "top-bottom" %}
     <!--top-bottom-->
-    <div class="row h-50 align-items-end ">
-      <div class="col  pb-1">
-        {% include sculpture-image-and-modal.html path=path_to_top identifier="top" %}
-      </div>
+    <div class="d-flex flex-column">
+      <div class="pb-1"> {% include sculpture-image-and-modal.html path=pTop identifier="top" %} </div>
+      <div class="pt-1"> {% include sculpture-image-and-modal.html path=pBottom identifier="bottom" %} </div>
     </div>
-    <div class="row h-50 align-items-start ">
-      <div class="col pt-1">
-        {% include sculpture-image-and-modal.html path=path_to_bottom identifier="bottom" %}
-      </div>
-    </div>
-
   {% else %}
-
-    {% comment %}
-    Confused about flexbox? Don't worry, me too.
-    https://getbootstrap.com/docs/4.4/utilities/flex/#direction
-    {% endcomment %}
-    <div class="d-flex flex-row align-items-center">
-      <div class="pr-1 text-right">
-        {% include sculpture-image-and-modal.html path=path_to_left identifier="left" %}
-      </div>
-      <div class="pl-1 text-left">
-        {% include sculpture-image-and-modal.html path=path_to_right identifier="right" %}
-      </div>
+    <!--left-right-->
+    <div class="d-flex flex-row justify-content-center">
+      <div class="pr-1"> {% include sculpture-image-and-modal.html path=pLeft identifier="left" %} </div>
+      <div class="pl-1"> {% include sculpture-image-and-modal.html path=pRight identifier="right" %} </div>
     </div>
   {% endif %}
-
 {% endif %}
