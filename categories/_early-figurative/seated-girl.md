@@ -1,11 +1,11 @@
 ---
 name: Seated Girl
-materials: Fired Clay
-x: 5
-y: 7
-z: 16
+materials: Clay
+x: 12
+y: 16
+z: 18
 images: 1
-details: 0
+details: 1
 
 layout: sculpture
 ---

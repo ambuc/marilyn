@@ -81,9 +81,11 @@ cast-figures:
 early-figurative:
   displayname: Early Figurative
   works: 
+    - "seated-girl"
+    - "figure-seated"
+    - "seated-figure"
     - "reclining-figure"
     - "reclining-male"
-    - "seated-girl"
     - "grey-girl"
 figure-sketches:
   displayname: Figure Sketches
@@ -93,7 +95,7 @@ figure-sketches:
     - "seated-figure-3"
     - "seated-figure-2"
     - "kneeling-figure-2"
-    - "seated-figure"
+    - "seated-sketch"
     - "reclining-figure-1"
     - "reclining-figure-2"
     - "figure-relief"
