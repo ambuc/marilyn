@@ -4,6 +4,7 @@ list:
   - clay-figures
   - clay-heads
   - totems
+  - cast-figures
   - early-figurative
   - figure-sketches
   - portraits
@@ -55,7 +56,6 @@ clay-heads:
 totems:
   displayname: Totems
   works: 
-    - "aluminum-figure"
     - "painted-totem"
     - "dark-totem"
     - "man-with-hat-1"
@@ -65,6 +65,17 @@ totems:
     - "sketch-with-hat"
     - "sketch-2"
     - "totem-sketch"
+cast-figures:
+  displayname: Cast Figures
+  works:
+    - "painted-figure"
+    - "aluminum-figure"
+    - "barn-figure"
+    - "walking-man"
+    - "girl-standing"
+    - "green-man"
+    - "leaning-woman"
+    - "torso"
 early-figurative:
   displayname: Early Figurative
   works: 
@@ -72,13 +83,6 @@ early-figurative:
     - "reclining-male"
     - "seated-girl"
     - "grey-girl"
-    - "painted-figure"
-    - "barn-figure"
-    - "green-man"
-    - "girl-standing"
-    - "walking-man"
-    - "leaning-woman"
-    - "torso"
 figure-sketches:
   displayname: Figure Sketches
   works: 
