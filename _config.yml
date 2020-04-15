@@ -23,6 +23,8 @@ collections:
     output: true
   totems:
     output: true
+  cast-figures:
+    output: true
   early-figurative:
     output: true
   figure-sketches:
