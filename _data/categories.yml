@@ -76,6 +76,7 @@ cast-figures:
     - "green-man"
     - "nitrate-figure"
     - "leaning-woman"
+    - "abstract-male"
     - "torso"
 early-figurative:
   displayname: Early Figurative
