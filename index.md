@@ -43,7 +43,9 @@ layout: default
    currently an Instructor at The Art Students League of New York. </p>
  
    <p> Marilyn J Friedman is a recipient of the 2014 Adolph & Esther Gottlieb
-   Foundation Grant in recognition of her work as a sculptor. </p>
+   Foundation Grant in recognition of her work as a sculptor, and was named a
+   2020 NYSCA/New York Foundation for the Arts Artist Fellow in Sculpture.
+   </p>
   </div>
  </div>
 </div>
