@@ -1,4 +1,6 @@
 **.swp
+.bundle/*
+vendor/*
 
 _site/
 .sass-cache/
