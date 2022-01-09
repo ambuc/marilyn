@@ -13,6 +13,7 @@ list:
 recent-work:
   displayname: Recent Work
   works:
+    - "running-figure-6"
     - "directional-figure-3"
     - "running-figure-5"
     - "directional-figure-2"
