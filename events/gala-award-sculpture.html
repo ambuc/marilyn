@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+
+<div class="row">
+  <div class="col-12 col-lg-8 text-center text-lg-right d-flex align-items-end flex-column">
+    <h2 class="fancy-font" style="font-size: 1.3em;"> The Art Students League of New York Gala Award Sculpture </h2>
+
+    <p class="pt-2 w-100">
+    The Museum of Modern Art<br>
+    November 7th, 2022<br>
+    Honorees:<br>
+    Faith Ringgold<br>
+    Susan Donoghue
+    </p>
+
+    <div class="pt-2 pb-0 mb-0 mt-auto" style="display:flex;">
+        <div class="mr-2" style="flex:1.2650;">
+            {% include sculpture-image-and-modal.html
+                path="/assets/images/gala-award-sculpture/left.JPG" 
+                identifier="left" %}
+        </div>
+        <div class="ml-2" style="flex:1.0237;">
+            {% include sculpture-image-and-modal.html
+                path="/assets/images/gala-award-sculpture/center.jpg" 
+                identifier="center" %}
+        </div>
+    </div>
+
+    <p class="pb-0 mb-0 mt-2 text-left text-lg-right">
+    The Art Students League commissioned Ms. Friedman to cast a bronze
+    edition of one of her sculptures as the award presented to Honorees at
+    the League's Annual Gala.
+    </p>
+  </div>
+
+  <div class="col-12 col-lg-4 text-center text-lg-right py-5 py-lg-0">
+    {% include sculpture-image-and-modal.html
+        path="/assets/images/gala-award-sculpture/right.jpg" 
+        identifier="right" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 text-center text-lg-right py-2">
+    {% include plaque.html 
+    name="AWARD SCULPTURE"
+    materials="Bronze, Edition of 14"
+    materials2="2.75 x 3 x 12 in"
+    materials3="2022"
+    %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 text-center">
+    {% include arrow-left.html url="/events" %}
+    {% include button-grid.html url="/events" %}
+    {% include arrow-right.html url="/events/gallery-space" %}
+  </div>
+</div>
