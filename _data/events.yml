@@ -1,6 +1,3 @@
-- id: gala-award-sculpture
-  displayname: The Art Students League of New York Gala Award Sculpture
-  link: gala-award-sculpture.html
 - id: gallery-space
   displayname: The Gallery Space
   link: gallery-space.html
@@ -22,3 +19,6 @@
 - id: events-walking-figure
   displayname: Boyd Sculpture Garden
   link: walking-figure.html
+- id: gala-award-sculpture
+  displayname: The Art Students League of New York Gala Award Sculpture
+  link: gala-award-sculpture.html
