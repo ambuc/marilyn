@@ -5,7 +5,7 @@ x: 24
 y: 31.5
 z: 72
 images: 1
-details: 0
+details: 1
 
 layout: sculpture
 ---
