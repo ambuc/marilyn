@@ -13,7 +13,7 @@ layout: default
   </li>
   {% endfor %}
   <li> <a href="events.html">Events</a> </li>
-  <li> <a href="assets/cv.pdf">CV</a> </li>
+  <li> <a href="assets/resume.pdf">CV</a> </li>
   <li> <a href="mailto:marilynjfriedman@gmail.com">Contact</a> </li>
   </ul>
  </div>
