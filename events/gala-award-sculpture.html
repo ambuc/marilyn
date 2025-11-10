@@ -6,38 +6,29 @@ layout: default
 
 
 <div class="row">
-  <div class="col-12 col-lg-8 text-center text-lg-right d-flex align-items-end flex-column" style="font-size: 0.90em;">
+  <div class="col-12 text-center d-flex flex-column" style="font-size: 0.90em;">
     <h2 class="fancy-font" style="font-size: 1.25em;"> The Art Students League of New York Gala Award Sculpture </h2>
+  </div>
+  <div class="col-12 col-lg-6 text-center text-lg-right d-flex align-items-end flex-column" style="font-size: 0.90em;">
+    <div class="pt-auto pb-0 mb-0 mt-auto w-100">
+      <p>
+      Ms. Friedman was commissioned to cast a bronze edition<br/>
+      of one of her sculptures as the award presented to<br/>
+      Honorees at the League’s Annual Gala.<br/><br/>
 
-    <p class="pt-2 w-100">
-    The Museum of Modern Art<br>
-    November 7th, 2022<br>
-    Honorees:<br>
-    Faith Ringgold<br>
-    Susan Donoghue
-    </p>
-
-    <div class="pt-2 pb-0 mb-0 mt-auto" style="display:flex;">
-        <div class="mr-2" style="flex:1.2650;">
-            {% include sculpture-image-and-modal.html
-                path="/assets/images/gala-award-sculpture/left.JPG" 
-                identifier="left" %}
-        </div>
-        <div class="ml-2" style="flex:1.0237;">
-            {% include sculpture-image-and-modal.html
-                path="/assets/images/gala-award-sculpture/center.jpg" 
-                identifier="center" %}
-        </div>
+      2022 - 2025 Honorees include Faith Ringgold, Larry Poons,<br/>
+      Beth Rubin De Woody, Louise Nevelson (In Memorium), James Little;<br/>
+      150th Anniversary Honoree: The Robert Rauschenberg Foundation
+      </p>
     </div>
-
-    <p class="pb-0 mb-0 mt-2 text-left text-lg-right">
-    The Art Students League commissioned Ms. Friedman to cast a bronze
-    edition of one of her sculptures as the award presented to Honorees at
-    the League's Annual Gala.
-    </p>
+    <div class="pt-2 pb-0 mb-0 mt-2 w-100 w-lg-50">
+      {% include sculpture-image-and-modal.html
+          path="/assets/images/gala-award-sculpture/center.jpg" 
+          identifier="center" %}
+    </div>
   </div>
 
-  <div class="col-12 col-lg-4 text-center text-lg-right py-5 py-lg-0">
+  <div class="col-12 col-lg-6 text-center text-lg-left py-2">
     {% include sculpture-image-and-modal.html
         path="/assets/images/gala-award-sculpture/right.jpg" 
         identifier="right" %}
