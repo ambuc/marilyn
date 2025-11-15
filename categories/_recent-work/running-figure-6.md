@@ -4,8 +4,8 @@ materials: Clay
 x: 18
 y: 30
 z: 38
-images: 1
-details: 1
+images: 2
+details: 0
 
 layout: sculpture
 ---
