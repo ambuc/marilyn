@@ -1,10 +1,10 @@
 ---
-name: Directional Figure IV
+name: Directional Figure V
 materials: Fired Clay
-x: 16
+x: 40
 y: 24
-z: 28
-images: 1
+z: 20
+images: 2
 
 layout: sculpture
 ---
