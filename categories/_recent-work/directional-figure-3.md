@@ -1,9 +1,9 @@
 ---
 name: Directional Figure III
 materials: Clay
-x: 20
-y: 28
-z: 34
+x: 12
+y: 26
+z: 30
 images: 2
 details: 0
 
