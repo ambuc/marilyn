@@ -1,6 +1,6 @@
 ---
 name: Directional Figure III
-materials: Clay
+materials: Fired Clay
 x: 12
 y: 26
 z: 30
