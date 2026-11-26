@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<div class="row">
+  <div class="col-12 col-lg-10">
+    <div class="row" >
+      <div class="offset-2 col-8">
+        <div class="mx-2">
+        {% include sculpture-image-and-modal.html
+           path="/assets/images/rockland-center/top.jpg" 
+           identifier="top" %}
+        </div>
+      </div>
+    </div>
+    <div class="w-100 py-2"></div>
+    <div class="row">
+      <div class="col" style="display:flex;">
+        <!-- flex = (2335+3024+2216)/2335  -->
+        <div class="mx-2" style="flex-grow:3.244111349;">
+          <!--2335 × 3373-->
+          {% include sculpture-image-and-modal.html
+             path="/assets/images/rockland-center/left.jpg" 
+             identifier="left" %}
+        </div>
+        <!-- flex = (2335+3024+2216)/3024  -->
+        <div class="mx-2" style="flex-grow:2.5049603175;">
+          <!--3024 × 4032-->
+          {% include sculpture-image-and-modal.html
+             path="/assets/images/rockland-center/center.jpg" 
+             identifier="center" %}
+        </div>
+        <!-- flex = (2335+3024+2216)/2216  -->
+        <div class="mx-2" style="flex-grow:3.4183212996;">
+          <!--2216 × 3784-->
+          {% include sculpture-image-and-modal.html
+             path="/assets/images/rockland-center/right.jpg" 
+             identifier="right" %}
+        </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-2 text-center text-lg-right py-2 py-lg-0">
+    {% include arrow-left.html url="/events" %}
+    {% include arrow-right.html url="/events/gallery-space" %}
+    {% include plaque.html 
+       name="Materializing: Contemporary Ceramic Sculpture"
+       materials="Rockland Center for the ARTS - RoCA, NY"
+       materials2="FALL 2026"
+       materials3="THREE SCULPTURES"
+    %}
+  </div>
+</div>
